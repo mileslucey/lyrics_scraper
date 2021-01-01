@@ -14,6 +14,7 @@ def scrape(artist, song): # Function scrapes the AZ Lyrics website for song lyri
         try:
             for i in range(17,21,3):
                 write_file.write(division_list[i].text)
+            print('Success! See txt file for lyrics')
         except Exception:
             print('The site doesn\'t have lyrics for that song. Try again!')
             write_file.close()
