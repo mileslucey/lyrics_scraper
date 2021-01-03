@@ -12,7 +12,6 @@ import os
 from tkinter import * 
 import webbrowser
 
-
 def scrape(artist, song): # Function scrapes the AZ Lyrics website for song lyrics using the inputs defined by the user
     url = 'https://www.azlyrics.com/lyrics/' + artist + '/' + song + '.html'
     source = requests.get(url).text
